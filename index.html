@@ -412,6 +412,7 @@
             aspect-ratio: 3/4;
             background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-bg-alt) 50%, var(--color-gold-light) 100%);
             box-shadow: var(--shadow-lg);
+            margin-bottom: 30px;
         }
 
         .hero-image-placeholder {
@@ -443,11 +444,12 @@
         }
 
         .hero-floating-card.card-rating {
-            bottom: 40px;
+            bottom: -20px;
             left: -30px;
             display: flex;
             align-items: center;
             gap: 10px;
+            z-index: 2;
         }
 
         .card-rating-stars {
@@ -468,9 +470,10 @@
         }
 
         .hero-floating-card.card-hours {
-            top: 40px;
+            top: 20px;
             right: -20px;
             animation-delay: 1s;
+            z-index: 2;
         }
 
         .card-hours-label {
@@ -1306,14 +1309,7 @@
             </div>
             <div class="hero-visual">
                 <div class="hero-image-wrapper">
-                    <div class="hero-image-placeholder">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="3" width="18" height="18" rx="2"/>
-                            <circle cx="8.5" cy="8.5" r="1.5"/>
-                            <path d="m21 15-5-5L5 21"/>
-                        </svg>
-                        Фото салона
-                    </div>
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=800&fit=crop&q=80" alt="Салон красоты Гармония" style="width:100%;height:100%;object-fit:cover;">
                 </div>
                 <div class="hero-floating-card card-rating">
                     <div>
@@ -1340,37 +1336,37 @@
             </div>
             <div class="services-grid">
                 <div class="service-card reveal reveal-delay-1">
-                    <div class="service-icon">✂️</div>
+                    <div class="service-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg></div>
                     <h3 class="service-name">Стрижки</h3>
                     <p class="service-desc">Женские и мужские стрижки любой сложности. Подберём форму, подходящую именно вам.</p>
                     <div class="service-price">от 800 ₽</div>
                 </div>
                 <div class="service-card reveal reveal-delay-2">
-                    <div class="service-icon">🎨</div>
+                    <div class="service-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/><circle cx="7.5" cy="10" r="1.5" fill="var(--color-primary)"/><circle cx="12" cy="7" r="1.5" fill="var(--color-gold)"/><circle cx="16.5" cy="10" r="1.5" fill="var(--color-primary-light)"/></svg></div>
                     <h3 class="service-name">Окрашивание</h3>
                     <p class="service-desc">Сложное окрашивание, балаяж, шатуш, мелирование. Работаем с премиальными красителями.</p>
                     <div class="service-price">от 2 500 ₽</div>
                 </div>
                 <div class="service-card reveal reveal-delay-3">
-                    <div class="service-icon">💅</div>
+                    <div class="service-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c-4 0-7-2-7-5 0-2.5 2-4.5 4-6.5C11 8.5 12 7 12 5c0 2 1 3.5 3 5.5 2 2 4 4 4 6.5 0 3-3 5-7 5z"/><path d="M12 22v-7"/></svg></div>
                     <h3 class="service-name">Маникюр и педикюр</h3>
                     <p class="service-desc">Классический, аппаратный, комбинированный маникюр. Покрытие гель-лаком и дизайн.</p>
                     <div class="service-price">от 1 200 ₽</div>
                 </div>
                 <div class="service-card reveal reveal-delay-4">
-                    <div class="service-icon">✨</div>
+                    <div class="service-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c2-2 5-4 10-4s8 2 10 4"/><path d="M2 12c2 2 5 4 10 4s8-2 10-4"/><circle cx="12" cy="12" r="3"/><path d="M12 5v2"/><path d="M12 17v2"/></svg></div>
                     <h3 class="service-name">Брови и ресницы</h3>
                     <p class="service-desc">Коррекция и окрашивание бровей, ламинирование и наращивание ресниц.</p>
                     <div class="service-price">от 600 ₽</div>
                 </div>
                 <div class="service-card reveal reveal-delay-1">
-                    <div class="service-icon">🧴</div>
+                    <div class="service-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v3H9z"/><path d="M8 6h8l1 4H7z"/><rect x="7" y="10" width="10" height="11" rx="2"/><line x1="12" y1="14" x2="12" y2="17"/></svg></div>
                     <h3 class="service-name">Уходовые процедуры</h3>
                     <p class="service-desc">Восстановление, кератиновое выпрямление, ботокс для волос. Глубокое питание и блеск.</p>
                     <div class="service-price">от 1 500 ₽</div>
                 </div>
                 <div class="service-card reveal reveal-delay-2">
-                    <div class="service-icon">💆</div>
+                    <div class="service-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19c0-5 4-8 8-8s8 3 8 8"/><circle cx="12" cy="7" r="4"/><path d="M8 3c1.5 1 3 1.5 4 1.5S14.5 4 16 3"/></svg></div>
                     <h3 class="service-name">Укладки</h3>
                     <p class="service-desc">Вечерние и свадебные укладки, причёски на любое мероприятие от простых до сложных.</p>
                     <div class="service-price">от 1 000 ₽</div>
@@ -1384,14 +1380,7 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-image reveal">
-                    <div class="about-image-placeholder">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
-                            <rect x="3" y="3" width="18" height="18" rx="2"/>
-                            <circle cx="8.5" cy="8.5" r="1.5"/>
-                            <path d="m21 15-5-5L5 21"/>
-                        </svg>
-                        Интерьер салона
-                    </div>
+                    <img src="https://images.unsplash.com/photo-1633681122611-8e4f2e60d9fa?w=800&h=600&fit=crop&q=80" alt="Интерьер салона Гармония" style="width:100%;height:100%;object-fit:cover;">
                 </div>
                 <div class="reveal">
                     <div class="section-label">О салоне</div>
@@ -1401,28 +1390,28 @@
                     </p>
                     <div class="about-features">
                         <div class="about-feature">
-                            <div class="about-feature-icon">🏆</div>
+                            <div class="about-feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 22V10.17"/><path d="M14 22V10.17"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg></div>
                             <div>
                                 <div class="about-feature-text">Премиальная косметика</div>
                                 <div class="about-feature-sub">Только проверенные бренды</div>
                             </div>
                         </div>
                         <div class="about-feature">
-                            <div class="about-feature-icon">💜</div>
+                            <div class="about-feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
                             <div>
                                 <div class="about-feature-text">Индивидуальный подход</div>
                                 <div class="about-feature-sub">Подберём идеальный образ</div>
                             </div>
                         </div>
                         <div class="about-feature">
-                            <div class="about-feature-icon">📍</div>
+                            <div class="about-feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
                             <div>
                                 <div class="about-feature-text">Удобная локация</div>
                                 <div class="about-feature-sub">Центр Выксы, легко найти</div>
                             </div>
                         </div>
                         <div class="about-feature">
-                            <div class="about-feature-icon">⭐</div>
+                            <div class="about-feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="var(--color-gold)" stroke="var(--color-gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
                             <div>
                                 <div class="about-feature-text">4.9 из 5 звёзд</div>
                                 <div class="about-feature-sub">По отзывам клиентов</div>
@@ -1444,19 +1433,19 @@
             </div>
             <div class="gallery-grid reveal">
                 <div class="gallery-item">
-                    <div class="gallery-placeholder">Фото работы 1</div>
+                    <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800&h=800&fit=crop&q=80" alt="Окрашивание волос" style="width:100%;height:100%;object-fit:cover;">
                 </div>
                 <div class="gallery-item">
-                    <div class="gallery-placeholder">Фото 2</div>
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&h=400&fit=crop&q=80" alt="Стрижка" style="width:100%;height:100%;object-fit:cover;">
                 </div>
                 <div class="gallery-item">
-                    <div class="gallery-placeholder">Фото 3</div>
+                    <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&h=400&fit=crop&q=80" alt="Маникюр" style="width:100%;height:100%;object-fit:cover;">
                 </div>
                 <div class="gallery-item">
-                    <div class="gallery-placeholder">Фото 4</div>
+                    <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&h=400&fit=crop&q=80" alt="Уход за волосами" style="width:100%;height:100%;object-fit:cover;">
                 </div>
                 <div class="gallery-item">
-                    <div class="gallery-placeholder">Фото 5</div>
+                    <img src="https://images.unsplash.com/photo-1457972729786-0411a3b2b626?w=600&h=400&fit=crop&q=80" alt="Укладка" style="width:100%;height:100%;object-fit:cover;">
                 </div>
             </div>
         </div>
@@ -1532,14 +1521,14 @@
                 <div class="reveal">
                     <div class="contact-info-list">
                         <div class="contact-item">
-                            <div class="contact-icon">📍</div>
+                            <div class="contact-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
                             <div>
                                 <div class="contact-label">Адрес</div>
                                 <div class="contact-value">ул. Красные Зори, 25А, Выкса</div>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <div class="contact-icon">📞</div>
+                            <div class="contact-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
                             <div>
                                 <div class="contact-label">Телефон</div>
                                 <div class="contact-value">
@@ -1548,14 +1537,14 @@
                             </div>
                         </div>
                         <div class="contact-item">
-                            <div class="contact-icon">🕐</div>
+                            <div class="contact-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
                             <div>
                                 <div class="contact-label">Режим работы</div>
                                 <div class="contact-value">Пн — Сб: 9:00 — 18:00</div>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <div class="contact-icon">💬</div>
+                            <div class="contact-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
                             <div>
                                 <div class="contact-label">Мессенджеры</div>
                                 <div class="contact-value">
@@ -1568,7 +1557,7 @@
                     <!-- Map placeholder -->
                     <div class="map-wrapper">
                         <div class="map-placeholder">
-                            <p>📍 Выкса, ул. Красные Зори, 25А</p>
+                            <p>Выкса, ул. Красные Зори, 25А</p>
                             <p style="margin-top:8px; font-size:0.8rem">
                                 <a href="https://yandex.ru/maps/-/CHE06Q0r" target="_blank" rel="noopener" style="color: var(--color-primary)">Открыть на Яндекс Картах →</a>
                             </p>
@@ -1651,8 +1640,8 @@
             <div class="footer-bottom">
                 <span>© 2026 Гармония. Все права защищены.</span>
                 <div class="footer-social">
-                    <a href="https://wa.me/79527706927" title="WhatsApp" aria-label="WhatsApp">💬</a>
-                    <a href="tel:+79527706927" title="Позвонить" aria-label="Телефон">📞</a>
+                    <a href="https://wa.me/79527706927" title="WhatsApp" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></a>
+                    <a href="tel:+79527706927" title="Позвонить" aria-label="Телефон"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
                 </div>
             </div>
         </div>
